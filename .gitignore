@@ -1,0 +1,65 @@
+# Ignore various files we don't want to package
+
+#
+# General stuff we don't want
+#
+
+# binaries / libraries
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+
+# archives
+*.zip
+*.gz
+*.tar
+*.bz2
+*.xz
+*.7z
+*.rar
+
+# scripts
+*.bat
+*.cmd
+*.sh
+
+# windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# folder config file
+[Dd]esktop.ini
+
+#
+# CoD specific files
+#
+
+# codradiant files
+**/maps/mp/*.bak
+**/maps/mp/*.lin
+**/maps/mp/*.map
+**/maps/mp/*.poly
+**/maps/mp/*.prt
+
+# ignore any non-mp maps
+**/maps/*
+!**/maps/mp/
+
+# gametype code
+**/maps/mp/gametypes/
+
+# other useless cod files
+**/collmaps/
+**/eagle/
+
+# non-mp weapons
+**/weapons/*
+!**/weapons/mp/
+
+# packaged assets
+*.pk3

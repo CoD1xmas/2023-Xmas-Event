@@ -35,6 +35,9 @@ ehthumbs_vista.db
 # folder config file
 [Dd]esktop.ini
 
+# vscode
+*.code-workspace
+
 #
 # CoD specific files
 #
@@ -63,3 +66,4 @@ ehthumbs_vista.db
 
 # packaged assets
 *.pk3
+

@@ -1,0 +1,37 @@
+Emitter
+{
+	flags				useModel usePhysics
+
+	life				5000
+
+	rotation			360
+
+	rotationDelta		-360 360
+
+	cullrange			200
+
+	bounce				0.5
+
+
+	angle				180
+
+	angleDelta			133
+
+	velocity			-100 0 100
+
+	acceleration		132 132 132 -132 -132 -132
+
+	gravity				-800
+
+	size
+	{
+		start			0.06
+		end			0.06
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/shot_shell
+	]
+}

@@ -43,18 +43,32 @@ ehthumbs_vista.db
 #
 
 # codradiant files
-**/maps/mp/*.bak
-**/maps/mp/*.lin
-**/maps/mp/*.map
-**/maps/mp/*.poly
-**/maps/mp/*.prt
+**/maps/MP/*.bak
+**/maps/MP/*.lin
+**/maps/MP/*.map
+**/maps/MP/*.poly
+**/maps/MP/*.prt
 
 # ignore any non-mp maps
 **/maps/*
-!**/maps/mp/
+!**/maps/MP/
 
 # gametype code
-**/maps/mp/gametypes/
+**/maps/MP/gametypes/**
+!**/maps/MP/gametypes/tow.txt
+!**/maps/MP/gametypes/tow.gsc
+!**/maps/MP/gametypes/frz.txt
+!**/maps/MP/gametypes/frz.gsc
+!**/maps/MP/gametypes/oic.txt
+!**/maps/MP/gametypes/oic.gsc
+!**/maps/MP/gametypes/gun.txt
+!**/maps/MP/gametypes/gun.gsc
+!**/maps/MP/gametypes/shp.txt
+!**/maps/MP/gametypes/shp.gsc
+!**/maps/MP/gametypes/jmp.txt
+!**/maps/MP/gametypes/jmp.gsc
+!**/maps/MP/gametypes/prophunt.txt
+!**/maps/MP/gametypes/prophunt.gsc
 
 # other useless cod files
 **/collmaps/

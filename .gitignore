@@ -74,10 +74,6 @@ ehthumbs_vista.db
 **/collmaps/
 **/eagle/
 
-# non-mp weapons
-**/weapons/*
-!**/weapons/mp/
-
 # packaged assets
 *.pk3
 

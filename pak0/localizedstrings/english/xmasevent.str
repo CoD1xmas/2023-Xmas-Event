@@ -34,4 +34,7 @@ LANG_ENGLISH        "Prophunt"
 REFERENCE           GTJMP
 LANG_ENGLISH        "Jump"
 
+REFERENCE           GTDSL
+LANG_ENGLISH        "Diesel"
+
 ENDMARKER

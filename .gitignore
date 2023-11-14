@@ -69,6 +69,8 @@ ehthumbs_vista.db
 !**/maps/MP/gametypes/jmp.gsc
 !**/maps/MP/gametypes/prophunt.txt
 !**/maps/MP/gametypes/prophunt.gsc
+!**/maps/MP/gametypes/dsl.txt
+!**/maps/MP/gametypes/dsl.gsc
 
 # other useless cod files
 **/collmaps/

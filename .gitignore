@@ -71,6 +71,8 @@ ehthumbs_vista.db
 !**/maps/MP/gametypes/prophunt.gsc
 !**/maps/MP/gametypes/dsl.txt
 !**/maps/MP/gametypes/dsl.gsc
+!**/maps/MP/gametypes/battleroyale.txt
+!**/maps/MP/gametypes/battleroyale.gsc
 
 # other useless cod files
 **/collmaps/

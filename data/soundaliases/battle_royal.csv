@@ -2,14 +2,6 @@ name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,channel
 
 null,,null.wav,,,,,,,,,,,,,
 
-#PUBG Sounds
-pubg_Para_Wind,,misc/wind_whistle.wav,0.67,0.67,,,100,800,auto,,,looping,,all_mp
-pubg_Parachute_land_player,,misc/para_land_player.wav,1.5,1.5,,,200,500,,,,,,all_mp
-pubg_c47,3,vehicles/c47_flyby01.wav,0.67,1.67,,,100,1600,auto,,,looping,,all_mp
-pubg_open_para,,pubg/chute_deploy.wav,1.5,,,,,,,,local,,,,,all_mp
-
-
-
 weap_greaser_fire,1,weapons/greasegun/greasegun_02.wav,1.25,1.5,0.9,1.05,7,7800,weapon,,,,,
 weap_greaser_fire,2,weapons/greasegun/greasegun_02.wav,1.25,1.5,0.9,1.05,7,7800,weapon,,,,,
 weap_greaser_reload,,weapons/mp40/mp40_reload.wav,1.25,1.5,,,7,500,,,auto

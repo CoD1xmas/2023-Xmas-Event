@@ -24,7 +24,7 @@
 # scripts
 *.bat
 *.cmd
-*.sh
+#*.sh
 
 # windows thumbnail cache files
 Thumbs.db

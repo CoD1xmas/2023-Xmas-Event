@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 echo "Xmas compile.sh script"
 
@@ -28,7 +27,7 @@ if [[ -f "$FSUFFIX$PAK.pk3" ]]; then
 fi
 
 echo "Compiling data..."
-"$ZIPCOMMAND" a -tzip "$FSUFFIX$PAK.pk3" "./data/"* #>/dev/null 2>&1
+"$ZIPCOMMAND" a -tzip "$FSUFFIX$PAK.pk3" "./data/"* >/dev/null 2>&1
 
 # read in map list
 MAPSRAW=()
@@ -63,7 +62,7 @@ for MAP in "${MAPS[@]}"; do
         ZIPSIZE="$(du -s -b "$FSUFFIX$PAK.pk3" | cut -f1)"
     fi
     ZIPSIZE=$((ZIPSIZE + "$MAPSIZE"))
-    "$ZIPCOMMAND" a -tzip "$FSUFFIX$PAK.pk3" "./maps/maps/$MAP/"* #>/dev/null 2>&1
+    "$ZIPCOMMAND" a -tzip "$FSUFFIX$PAK.pk3" "./maps/maps/$MAP/"* >/dev/null 2>&1
 
     if [[ "$ZIPSIZE" -gt "$ZIPSPLIT" ]]; then
         PAK=$((PAK + 1))

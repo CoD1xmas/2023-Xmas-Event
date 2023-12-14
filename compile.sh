@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 echo "Xmas compile.sh script"
 
 FSUFFIX="zZz_XMAS_EVENT_v23_pak"
@@ -7,19 +9,21 @@ ZIPSPLIT=134217728 # 128 MiB
 PAK=0
 
 # 7z command varies depending on distro
-ZIPCOMMAND="$(command -v 7z)"
-if [[ ! -x "$ZIPCOMMAND" ]]; then
-    ZIPCOMMAND="$(command -v 7za)"
-fi
-
-if [[ ! -x "$ZIPCOMMAND" ]]; then
-    ZIPCOMMAND="$(command -v 7zz)"
-fi
+ZIPCOMMAND=""
+EXES=("7z 7za 7zz")
+for EXE in "${EXES[@]}"; do
+    if [[ -x "$(command -v $EXE)" ]]; then
+        ZIPCOMMAND="$(command -v $EXE)"
+        break
+    fi
+done
 
 if [[ ! -x "$ZIPCOMMAND" ]]; then
     echo "7zip not available"
     exit
 fi
+
+echo "Using 7zip ($ZIPCOMMAND)"
 
 # remove any existing pk3s
 if [[ -f "$FSUFFIX$PAK.pk3" ]]; then

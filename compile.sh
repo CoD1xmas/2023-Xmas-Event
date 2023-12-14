@@ -10,10 +10,10 @@ PAK=0
 
 # 7z command varies depending on distro
 ZIPCOMMAND=""
-EXES=("7z 7za 7zz")
+EXES=("7z" "7za" "7zz")
 for EXE in "${EXES[@]}"; do
-    if [[ -x "$(command -v $EXE)" ]]; then
-        ZIPCOMMAND="$(command -v $EXE)"
+    if [[ -x "$(command -v "$EXE")" ]]; then
+        ZIPCOMMAND="$(command -v "$EXE")"
         break
     fi
 done

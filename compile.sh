@@ -14,7 +14,7 @@ if [[ ! -x "$ZIPCOMMAND" ]]; then
 fi
 
 if [[ ! -x "$ZIPCOMMAND" ]]; then
-    ZIPCOMMAND=$(command -v 7zz)
+    ZIPCOMMAND="$(command -v 7zz)"
 fi
 
 if [[ ! -x "$ZIPCOMMAND" ]]; then

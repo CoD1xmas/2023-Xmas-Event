@@ -39,6 +39,6 @@ Thanks to all involved in the making of this project:
 - Cheese
 - Zilch
 - TheGoog
-- Vize
+- ViezeOudeMan
 
 And to all our lovely testers and participants!

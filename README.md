@@ -38,6 +38,7 @@ Thanks to all involved in the making of this project:
 - Expert
 - Cheese
 - Zilch
+- Hehu
 - TheGoog
 - ViezeOudeMan
 

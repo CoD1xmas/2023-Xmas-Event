@@ -73,3 +73,5 @@ for MAP in "${MAPS[@]}"; do
     fi
     COUNT=$((COUNT + 1))
 done
+
+sha1sum "$FSUFFIX"*.pk3

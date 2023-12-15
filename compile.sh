@@ -59,13 +59,13 @@ echo "Compiling map pk3s..."
 COUNT=1
 for MAP in "${MAPS[@]}"; do
     MAPSIZE="$(du -s -b "maps/maps/$MAP" | cut -f1)"
-    printf "%2i / %-2i %-32s %-4s %10d KiB \n" $COUNT "${#MAPS[*]}" "$MAP" "pak$PAK" "$((MAPSIZE / 1024))"
+    printf "%2i / %-2i %-32s %-4s %10d KiB \n" $COUNT "${#MAPS[*]}" "$MAP" "pak$PAK" $((MAPSIZE / 1024))
 
     ZIPSIZE=0
     if [[ -f "$FSUFFIX$PAK.pk3" ]]; then
         ZIPSIZE="$(du -s -b "$FSUFFIX$PAK.pk3" | cut -f1)"
     fi
-    ZIPSIZE=$((ZIPSIZE + "$MAPSIZE"))
+    ZIPSIZE=$((ZIPSIZE + MAPSIZE))
     "$ZIPCOMMAND" a -tzip "$FSUFFIX$PAK.pk3" "./maps/maps/$MAP/"* >/dev/null 2>&1
 
     if [[ "$ZIPSIZE" -gt "$ZIPSPLIT" ]]; then

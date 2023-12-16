@@ -26,6 +26,7 @@ Public repository for the 2023 Call of Duty 1.1 Xmas Event assets.
 - xp_hanoi_winter
 - xp_stadium
 - xp_toujane
+- zh_broadcast
 - zh_winter_plaza
 
 ## :pray: Special Thanks
